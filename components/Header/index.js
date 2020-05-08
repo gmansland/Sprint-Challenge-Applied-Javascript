@@ -27,7 +27,7 @@ function Header() {
 
     date.textContent = ('MARCH 28, 2019')
     heading.textContent = ('Lambda Times')
-    temp.textContent = ('98')
+    temp.textContent = ('98°F')
     
     return header
 }

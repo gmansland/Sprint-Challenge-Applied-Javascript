@@ -9,10 +9,10 @@
 //    <div class="tab">topic here</div>
 
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
-.then(best => {
-    console.log(best.data.topics)
+.then(responce => {
+    console.log(responce.data.topics)
 
-    best.data.topics.forEach(topicz => {
+    responce.data.topics.forEach(topicz => {
         topics.appendChild(createTab(topicz))
     })
 })
@@ -29,3 +29,4 @@ function createTab(object) {
     tab.textContent = object
     return tab
 }
+
